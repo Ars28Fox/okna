@@ -32,7 +32,7 @@ module.exports = function style() {
 		.pipe(clean({
 			level: 2
 		}))
-		.pipe(concat('dcp-landing.css'))
+		.pipe(concat('style.min.css'))
 		.pipe(map.write('../sourcemaps/'))
 		.pipe(dest('docs/css/'))
 		.pipe(bs.stream())
