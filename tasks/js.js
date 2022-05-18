@@ -7,8 +7,8 @@ const concat = require('gulp-concat');
 const map = require('gulp-sourcemaps');
 const bs = require('browser-sync');
 
-module.exports = function dev_js() {
-	return src(['src/components/**/*.js', 'src/js/main.js'])
+module.exports = function js() {
+	return src(['src/js/components/**/*.js', 'src/js/main.js'])
 		.pipe(map.init())
 		.pipe(uglify())
 		.pipe(concat('main.min.js'))
